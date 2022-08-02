@@ -20,8 +20,8 @@ class Girl implements Person {
 }
 ```
 
-And as you can see nothing has changed, so whats the difference between extending and implementing an abstract class?
+The difference between extending and implementing an abstract class is that with `extends` you can extend only **one** superclass, and you **must** override any abstract method present in the super class.
 
-With `extends` you can extend only **one** superclass, and you **must** override any abstract method present in the super class.
+With `implements` you can implement **multiple** classes, and you **must** override any method whether it's abstract or not.
 
-With `implements` you can implement **multiple** classes, and you **must** override any method weather its abstract or not.
+<!-- Doesn't it need some extra details and explanation? -->

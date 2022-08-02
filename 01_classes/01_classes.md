@@ -1,8 +1,9 @@
-Classes are the foundation of object oriented programming and we can use them to define new types. So far we have used the basic types of dart, such as bool, int, double, String, List, Set and Map, but those types can't always be used to model the data we need such as modeling a map location or a bank account, and classes will help us model such things.
+Classes are the foundation of object oriented programming. We can use them to define new types.
+So far, we've used the basic types of Dart, such as bool, int, double, String, List, Set and Map, but those types can't always be used to model the data we need, such as modeling a map location or a bank account. However, classes can help us model such data.
 
-Classes are like containers that holds the data and the functionalities for manipulating those data.
+Classes are like containers that hold the data and the functionalities to manipulate those data.
 
-Let's start with out first class:
+Let's start with our first class:
 
 ```dart
 
@@ -27,9 +28,9 @@ void main() {
 }
 ```
 
-In the code above, we declared a class called `UserWallet` with one property inside called `credit` to store the balance of the user, then we initialized the credits to `0` by default.
+In the code above, we declared a class called `UserWallet` with one property inside called `credit` to store the balance of the user, then we initialized the credits to `0`.
 
-So how are we going to use this class?, We need to create an `instance` of the class:
+To use this class, we need to create an `instance` of it as shown below:
 
 ```dart
 class UserWallet {
@@ -41,9 +42,9 @@ final ahmadsWallet = UserWallet();
 }
 ```
 
-And this how to create an instance of the `UserWallet` class and store it in the variable `ahmadsWallet`.
+We created an instance of the `UserWallet` class and stored it in the variable `ahmadsWallet`.
 
-After we created a new wallet, we can check the credits of the wallet we created:
+After creating a new wallet, we can check the credits of the wallet we created:
 
 ```dart
 class UserWallet {
@@ -59,10 +60,10 @@ print(ahmadsWallet.credits);
 Output:
 
 ```
-0
+0.0
 ```
 
-As you see, we can access the properties of a class instance by adding a `.` then the name of the property.
+As you can see, we can access the properties of a class instance by adding a `.`, then the name of the property.
 
 We can also set the value of a property:
 
@@ -81,10 +82,10 @@ print(ahmadsWallet.credits);
 Output:
 
 ```
-500
+500.0
 ```
 
-And we can declare multiple instances of a class, for example, let's create a wallet for `omar` and give him `100` credits:
+We can declare multiple instances of a class. For example, we can create a wallet for `Omar` and give him `100` credits:
 
 ```dart
 class UserWallet {
@@ -106,6 +107,6 @@ print(omarsWallet.credits);
 Output:
 
 ```
-500
-100
+500.0
+100.0
 ```

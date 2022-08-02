@@ -1,6 +1,6 @@
-We often need to map `json` data to our dart classes, so let's learn how to do this in an easy way.
+We often need to map `json` data to our Dart classes. Let's learn how to do that in an easy way.
 
-We will create a mock `json` data for a movies list using a dart `map`:
+We will create a mock `json` data for a movies list using a Dart `map`:
 
 ```dart
 void main() {
@@ -17,7 +17,7 @@ void main() {
 }
 ```
 
-Now we need to create a class for the movie:
+Now, we need to create a class for the movie:
 
 ```dart
 class Movie{
@@ -38,9 +38,9 @@ class Movie{
 }
 ```
 
-Our map consists of a `key` that is always a `string` and a value that may be a string or a double in our case, thats why our constructor takes a `map` of `string` and `dynamic`, then assigns those values to our class properties.
+Our map consists of a `key` that is always a `string` and a value that might be a string or a double in our case. That's why our constructor takes a `map` of `string` and `dynamic`, and assigns those values to our class properties.
 
-Now we can map our `jsonMovies` to `Movies` objects using `map`:
+Now, we can map our `jsonMovies` to `Movies` objects using `map`:
 
 ```dart
 class Movie{

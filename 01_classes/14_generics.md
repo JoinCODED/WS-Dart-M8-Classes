@@ -1,4 +1,4 @@
-To better understand what generics are, let's take a look at a built in class we have used in dart, which is a `list`:
+To better understand what generics are, let's take a look at a built-in class we've used in Dart, which is a `list`:
 
 ```dart
 void main(){
@@ -8,9 +8,9 @@ List<String> words = ["hello","dart","flutter"];
 }
 ```
 
-As you see in the code above, the type `List`, have been called once to hold `int` values and once with `string` values.
+As you can see in the code above, the type `List` has been called once to hold `int` values and once with `string` values.
 
-But how is this possible, and how we can create a class that can take multiple types?
+How is this possible? and how can we create a class that can take multiple types?
 
 We will build a simplified version of the `List` class to learn this:
 
@@ -26,7 +26,7 @@ class MyList {
 }
 ```
 
-We need `MyList` to be dynamic and accept any type we initialize it with, and our missing pieces here are marked with `??`, so for example if `MyList` going to be for `int` type, the code should be like this:
+We need `MyList` to be dynamic and accept any type we initialize it with. Our missing pieces here are marked with `??`. For example if `MyList` is going to be for `int` type, the code should be as follows:
 
 ```dart
 class MyList {
@@ -40,7 +40,7 @@ class MyList {
 }
 ```
 
-But as we agreed, we need it to be dynamic, so we are going to use a `generic`, and we do that by:
+As we agreed, we need it to be dynamic, so we are going to use a `generic`, and we do that by:
 
 1. Telling our class that you will accept a type with the initialization by adding `<T>` after the class name:
 
@@ -62,7 +62,7 @@ class MyList<T> {
 }
 ```
 
-Now we can create two lists as follows:
+Now, we can create two lists as follows:
 
 ```dart
 class MyList<T> {
