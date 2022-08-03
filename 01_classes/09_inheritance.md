@@ -1,4 +1,4 @@
-Inheritance, Aka Subclassing is used to extend the functionality of an existing class, Let's see how it works:
+Inheritance, aka subclass, is used to extend the functionality of an existing class. Let's see how it works:
 
 ```dart
 class Animal {
@@ -16,12 +16,11 @@ Output:
 eating
 ```
 
-Here, we have a class for an `animal`, that for now can do one thing, which is `eating`, and we created one instance for a `dog`.
+Here, we have a class for an `animal` that can only do one thing for now, `eating`, and we created one instance for a `dog`.
 
-Now what if I wanted another instance for a `shark`, that has one extra functionality which is `swimming`, it is not convenient
-to add the `swimming` method to the `animal` class because not all animals can swim. It's also not convenient to create a new class just for `sharks` and rewrite all methods since they share a common functionally which is `eating`.
+What if I wanted another instance for a `shark` that has one extra functionality which is `swimming`, it is not convenient to add the `swimming` method to the `animal` class because not all animals can swim. It's also not convenient to create a new class just for `sharks` and rewrite all methods since they share a common functionally which is `eating`.
 
-The solution for this is by creating a `Fish` class that extends all methods from the `animal` class and then add whatever different method we need to add:
+The solution for this is creating a `Fish` class that extends all methods from the `animal` class and adds whatever different method we need to add:
 
 ```dart
 class Animal {
@@ -49,4 +48,4 @@ eating
 swimming
 ```
 
-Notice that we used the `eat` method in the `Animal` class in the `Fish` class because the `Fish` class `extends` the `Animal` class (which is also called the parent class or the super class) and inherit all its methods and variables.
+Notice that we used the `eat` method in the `Fish` class because the `Fish` class `extends` the `Animal` class (which is also called the parent class or the super class) and inherits all its methods and variables.

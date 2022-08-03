@@ -2,7 +2,7 @@ Suppose we have the following code:
 
 ```dart
 class Animal {
-    void breath() => print('breathing');
+    void breathe() => print('breathing');
 }
 
 class Fish extends Animal {
@@ -18,7 +18,7 @@ void main() {
 }
 ```
 
-Giving the code above, both humans and fish can `breath` because both extends `human`, and both of them can `swim` also, but not all `animal`s can `swim`, so we can't add this method to the `animal` class, the solution is to create whats so called a `mixin`:
+Given the code above, both humans and fish can `breathe` because both extend `animal`, and both of them can `swim` as well, but not all `animal`s can `swim`, so we can't add this method to the `animal` class. The solution is to create what's called a `mixin`:
 
 ```dart
 mixin Swimming {
@@ -26,7 +26,7 @@ mixin Swimming {
 }
 ```
 
-We created a mixin called `Swimming` and added the `swim` method in it, and now when can use this mixin with any class that needs it using the `with` keyword:
+We created a mixin called `Swimming` and added the `swim` method to it. Now, we can use this mixin with any class that needs it, using the `with` keyword:
 
 ```dart
 class Fish extends Animal with Swimming {

@@ -29,7 +29,7 @@ class UserWallet {
 }
 ```
 
-Here, I created a method thats gets the balance but only if the pass code is right:
+In the example above, I created a method that gets the balance only if the pass code is right:
 
 ```dart
 void main() {
@@ -48,7 +48,7 @@ Output:
 100
 ```
 
-We can still access the credits of ahmad, but we can mark it private by adding an `_` underscore in front of the name:
+We can still access the credits of ahmad, but we can mark it private by adding an `_` underscore before the name:
 
 ```dart
 class UserWallet {
@@ -85,4 +85,6 @@ void main() {
 }
 ```
 
-Now we get an error if we tried to access the credits!
+<!-- You can access the private variables inside the class as well as the same file, so in the example above, we don't get any error because we're trying to access it within the same file even though the variable is declared in a different class -->
+
+Now, we get an error if we try to access the credits!

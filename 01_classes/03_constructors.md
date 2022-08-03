@@ -1,6 +1,6 @@
-We want do modify our UserWallet system to be able to add credits when we initialize the wallet instance, and we can achieve that using `class constructors`:
+We want to modify our `UserWallet` system to be able to add credits when we initialize the wallet instance. We can achieve that by using `class constructors`:
 
-Here's our class so far:
+Below is our class so far:
 
 ```dart
 class UserWallet {
@@ -19,7 +19,7 @@ void withdraw(double amount){
 }
 ```
 
-We add a constructor by typing the same class name followed by parenthesis:
+We add a constructor by typing the class name followed by parentheses:
 
 ```dart
 class UserWallet {
@@ -41,7 +41,7 @@ void withdraw(double amount){
 }
 ```
 
-And in those parenthesis, we can add any arguments we need:
+In those parentheses, we can add any argument we need:
 
 ```dart
 class UserWallet {
@@ -63,14 +63,14 @@ void withdraw(double amount){
 }
 ```
 
-Then we add curly braces, and we specify what we wanna do with this argument:
+We add curly braces, and we specify what we want to do with this argument:
 
 ```dart
 class UserWallet {
 
 UserWallet(double credits){
     credits = credits;
-};
+}
 
 double credits = 0;
 
@@ -87,7 +87,7 @@ void withdraw(double amount){
 }
 ```
 
-Have you noticed something?, it's like we are writing a normal function, but what's special in this function is that it runs on the initialization of the instance, so in the function body we want to assign the `credits` argument to the `credits` property of our class, but they both have the same name, so how can we help dart differentiate between them?
+Have you noticed something? It's like we are writing a regular function. However, what's special about this one is that it runs on the initialization of the instance. In the function body, we want to assign the `credits` argument to the `credits` property of our class, but they both have the same name, how can we help Dart differentiate between them?
 
 We use the `this` keyword to refer to the class property:
 
@@ -113,12 +113,14 @@ void withdraw(double amount){
 }
 ```
 
-As we learned, this function runs when we initialize our instance, thats why we initialize the instance by typing the class name followed by parenthesis, just like we call a function and provide it with the arguments needed, we call the class and give it the arguments needed:
+As we learned, this function runs when we initialize our instance. That's why we initialize the instance by typing the class name followed by parentheses. Just like calling a function and providing it with the arguments needed, we call the class and give it the arguments needed:
 
+```dart
 void main() {
 final ahmadsWallet = UserWallet(100);
 print(ahmadsWallet.credits);
 }
+```
 
 Output:
 
@@ -126,9 +128,9 @@ Output:
 100
 ```
 
-And the same rules for named an positional arguments applies on constructor functions.
+The same rules of named and positional arguments apply to constructor functions.
 
-But, we can also make the code shorter:
+We can also make the code shorter:
 
 ```dart
 class UserWallet {
@@ -150,4 +152,4 @@ void withdraw(double amount){
 }
 ```
 
-We can remove the function body and add `.this` to the argument name and dart is smart enough to know that this is an initializer, and we can also remove the type annotation as dart will infer it from the class property.
+We can remove the function body and add `.this` to the argument. Dart is smart enough to know that this is an initializer. We can also remove the type annotation, as Dart will infer it from the class property.

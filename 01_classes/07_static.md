@@ -1,4 +1,4 @@
-Static class variables are variables that belongs to the class itself, and can be used and assigned without creating an instance of the class, for example:
+Static class variables are variables that belong to the class itself. They can be used and assigned without creating an instance of the class, for example:
 
 ```dart
 class Employee {

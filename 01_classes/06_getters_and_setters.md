@@ -11,7 +11,7 @@ class Person{
 }
 ```
 
-That takes the height in `cm`. We can initialize an instance of this class and get the height in inches:
+The above class takes the height in `cm`. We can initialize an instance of this class and get the height in inches:
 
 ```dart
 void main (){
@@ -26,7 +26,7 @@ Output:
 78.74015748031496
 ```
 
-But there's a nicer way of doing this called a `getter`. Which is a computed value instead of a method:
+However, there's a better way of doing that, and it's called a `getter`. This is a computed value instead of a method, and it's used to retrieve a particular class filed and save it in a variable:
 
 ```dart
 class Person{
@@ -42,9 +42,9 @@ void main (){
 }
 ```
 
-We write `get` between the `type` and the `name`, and we remove the `return` keyword and the `parenthesis`.
+We place the `get` keyword between the return type and the name of the variable we want to get. We remove the `parentheses` because no need to define parameters.
 
-We can also define a setter that sets the height in feet:
+We can also define a `setter` that sets the height in feet:
 
 ```dart
 class Person{

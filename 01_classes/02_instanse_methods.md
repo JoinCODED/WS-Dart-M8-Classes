@@ -1,4 +1,4 @@
-We create a wallet for ahmad:
+We created a wallet for ahmad:
 
 ```dart
 class UserWallet {
@@ -12,7 +12,7 @@ print(ahmadsWallet.credits);
 }
 ```
 
-But in real life, a wallet should have some functionalities, like withdrawing credits or deposit credits, and as we said, the class is responsible for manipulating the data in it, so we can add `instance methods`.
+In real life, a wallet should have some functionalities, like withdrawing credits or depositing credits. As we said, the class is responsible for manipulating the data in it, so we can add instance methods.
 
 Let's create the `deposit` method:
 
@@ -27,7 +27,7 @@ credits = credits + amount;
 }
 ```
 
-Adding a method is by creating a function inside the class, and we can use access this method in the same way we accessed our property:
+We add a method by creating a function inside the class. We can access this method in the same way we accessed our property:
 
 ```dart
 class UserWallet {
@@ -49,7 +49,7 @@ print(ahmadsWallet.credits);
 Output:
 
 ```
-500
+500.0
 ```
 
 Let's add another 10 credits for ahmad using our method:
@@ -66,7 +66,7 @@ print(ahmadsWallet.credits);
 Output:
 
 ```
-510
+510.0
 ```
 
 Let's create the withdraw method:
@@ -86,7 +86,7 @@ credits = credits - amount;
 }
 ```
 
-And let's use it to withdraw 100 credit:
+Let's use it to withdraw 100 credits:
 
 ```dart
 class UserWallet {
@@ -115,10 +115,10 @@ print(ahmadsWallet.credits);
 Output:
 
 ```
-410
+410.0
 ```
 
-But what if our credits are less than the withdraw account?
+What if our credits are less than the withdraw account?
 
 ```dart
 class UserWallet {

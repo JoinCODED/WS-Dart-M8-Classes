@@ -21,7 +21,7 @@ void withdraw(double amount){
 }
 ```
 
-We did 2 methods that withdraw and deposit credits, but we don't the user to change the account holder like this:
+We created two methods, withdraw and deposit credits, but we don't want the user to change the account holder name like this:
 
 ```dart
 void main() {
@@ -62,7 +62,7 @@ void withdraw(double amount){
 }
 ```
 
-Note: If all of your class's properties are immutable (final), you should declare the constructor as `const`, example:
+**Note:** If all of your class's properties are immutable (final), you should declare the constructor as `const`, example:
 
 ```dart
 class Example{

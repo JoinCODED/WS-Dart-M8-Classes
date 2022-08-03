@@ -1,4 +1,4 @@
-Abstract classes are classes that cannot be instantiated, Let's take an example:
+Abstract classes are classes that cannot be instantiated. Let's take an example:
 
 ```dart
 abstract class Person {
@@ -15,13 +15,13 @@ void main() {
 }
 ```
 
-We got the following error because Abstract classes cannot be instantiated.
+We got the following error because abstract classes cannot be instantiated.
 
 ```
 Abstract classes can't be instantiated.
 ```
 
-So whats the point if we can't use it? we can extend those classes and override their methods and variables:
+What's the point if we can't use it? We can extend those classes and override their methods and variables:
 
 ```dart
 abstract class Person {
@@ -56,7 +56,7 @@ boy
 girl
 ```
 
-Still don't feel this is useful? what if we want to create a function that allows only boys to enter, we can now refer to both `personOne` and `personTwo` as the type `Person`, like this:
+Still don't feel this is useful? What if we want to create a function that allows boys only to enter? we can now refer to both `personOne` and `personTwo` as the type `Person`, like this:
 
 ```dart
 bool amIAllowed(Person person){
@@ -78,4 +78,4 @@ Output:
 true
 ```
 
-The conclusion is: Abstract classes can help us define an `interface` the can be implemented by subclasses.
+The conclusion is: Abstract classes can help us define an `interface` that can be implemented by subclasses.

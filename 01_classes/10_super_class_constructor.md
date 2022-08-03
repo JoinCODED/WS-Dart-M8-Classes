@@ -1,4 +1,4 @@
-We saw how we can inherit the methods and variables of a super class to the sub classes, however, the constructors cannot be directly inherited, let's demonstrate that:
+We saw how the sub classes can inherit the methods and variables from a super class. However, the constructors cannot be directly inherited, let's demonstrate that:
 
 ```dart
 class Animal {
@@ -20,13 +20,13 @@ shark.swim();
 }
 ```
 
-We added a constructor to our `Animal` class, but as soon as we did that, we got the following error:
+We added a constructor to our `Animal` class, but once we did that, we got the following error:
 
 ```
 The superclass 'Animal' doesn't have a zero argument constructor.
 ```
 
-And to solve this we need to call the super constructor inside the sub class `Fish`:
+To solve this, we need to call the super constructor inside the sub class `Fish`:
 
 ```dart
 class Fish extends Animal {
@@ -35,9 +35,9 @@ class Fish extends Animal {
 }
 ```
 
-We do this by creating a constructor for the subclass, then a colon `:` then the keyword `super` followed by a parenthesis.
+We do that by creating a constructor for the subclass, followed by a colon `:`, then the keyword `super` followed by parentheses.
 
-Now in our subclass constructor we require the argument:
+Now, in our subclass constructor, we require the argument name:
 
 ```dart
 class Fish extends Animal {
@@ -46,7 +46,7 @@ class Fish extends Animal {
 }
 ```
 
-And then we pass this argument to the super constructor:
+Then, we pass this argument to the super constructor:
 
 ```dart
 class Fish extends Animal {
